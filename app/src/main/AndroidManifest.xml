@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ZhuceActivity" />
+        <activity android:name=".TushucxActivity"></activity>
         <activity android:name=".LuruActivity"></activity>
     </application>
 
