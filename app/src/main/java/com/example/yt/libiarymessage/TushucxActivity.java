@@ -3,7 +3,7 @@ package com.example.yt.libiarymessage;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class tushucxActivity extends AppCompatActivity {
+public class TushucxActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
