@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ZhuceActivity"></activity>
+        <activity android:name=".ZhuceActivity" />
+        <activity android:name=".tushucxActivity"></activity>
     </application>
 
 </manifest>
