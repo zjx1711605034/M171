@@ -65,11 +65,13 @@
         android:id="@+id/edt_main_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
         android:ems="10"
         android:hint="输入书名"
         android:inputType="textPersonName"
         app:layout_constraintBaseline_toBaselineOf="@+id/tv_main_name"
-        tools:layout_editor_absoluteX="133dp" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/tv_main_show"
@@ -81,10 +83,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/but_main_cx" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_tushu_check" />
 
     <Button
-        android:id="@+id/but_main_cx"
+        android:id="@+id/btn_tushu_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -95,13 +97,13 @@
         android:background="@android:color/holo_red_light"
         android:text="查询"
         android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/but_main_back"
+        app:layout_constraintEnd_toStartOf="@+id/btn_tushu_return"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_main_name" />
 
     <Button
-        android:id="@+id/but_main_back"
+        android:id="@+id/btn_tushu_return"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -109,9 +111,9 @@
         android:background="@android:color/holo_red_light"
         android:text="返回"
         android:textSize="18sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/but_main_cx"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_tushu_check"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/but_main_cx" />
+        app:layout_constraintStart_toEndOf="@+id/btn_tushu_check" />
 
 </android.support.constraint.ConstraintLayout>
