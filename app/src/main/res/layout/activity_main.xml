@@ -68,7 +68,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="请输入密码"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:textSize="24sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/tv_main_mima"
         app:layout_constraintEnd_toEndOf="parent"
