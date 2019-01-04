@@ -5,9 +5,12 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class MyDBHelper extends SQLiteOpenHelper {
+    static Integer version=1;
+    static String Tablename="userData";
+    static  String DabaBase="ZJXData";
     public static final String CREATE_USERDATA="create table userData(" +
             "id integer primary key autoincrement,"
-            +"nametext,"
+            +"name text,"
             +"password text)";
 
     private Context mcontext;

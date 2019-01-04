@@ -4,10 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/timg"
-    tools:context=".TushucxActivity">
 
+    tools:context=".TushucxActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/MyToobar"
+        android:layout_width="match_parent"
+        android:background="#e77e0d"
+        android:layout_height="wrap_content"
+        app:title="图书信息查询"/>
     <TextView
+        android:visibility="invisible"
         android:id="@+id/tv_tushucx"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
