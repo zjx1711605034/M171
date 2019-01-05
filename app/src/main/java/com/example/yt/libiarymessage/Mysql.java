@@ -10,26 +10,43 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Mysql {
-    static   String zhucheyuju = "Insert into " + MyDBHelper.Tablename + " (name,password) values(?,?)";
-    static String AddBook="insert into Books (BookID,BookName,BookPosition) values(?,?,?)";
-    public static SQLiteDatabase WrieData(MyDBHelper myDBHelper){
+
+   static MyDBHelper myDBHelper=null;
+
+    public static SQLiteDatabase WrieData(Context context){
+         myDBHelper=new MyDBHelper(context,MyDBHelper.DabaBase,null,MyDBHelper.version);
         SQLiteDatabase writableDatabase = myDBHelper.getWritableDatabase();
         return  writableDatabase;
     }
-    public static SQLiteDatabase ReadeData(MyDBHelper myDBHelper){
+    public static  void CloseData(SQLiteDatabase sqLiteDatabase){
+        if(sqLiteDatabase!=null){
+            sqLiteDatabase.close();
+            if(myDBHelper!=null){
+                myDBHelper.close();
+            }
+        }
+
+
+    }
+
+
+
+
+    public static SQLiteDatabase ReadDate(Context context){
+        myDBHelper=new MyDBHelper(context,MyDBHelper.DabaBase,null,MyDBHelper.version);
         SQLiteDatabase writableDatabase = myDBHelper.getReadableDatabase();
         return  writableDatabase;
     }
-    public  static void DelAndInserAndAlter(String sqlyuju, Object[] chanshu, Context context){
+  /*  public  static void DelAndInserAndAlter(String sqlyuju, Object[] chanshu, Context context){
         MyDBHelper myDBHelper1=null;
         SQLiteDatabase sqLiteDatabase=null;
         try{
             myDBHelper1=new MyDBHelper(context, MyDBHelper.DabaBase, null, MyDBHelper.version);
             sqLiteDatabase= ReadeData(myDBHelper1);
             sqLiteDatabase.execSQL(sqlyuju,chanshu);
-           Toast.makeText(context, "成功", Toast.LENGTH_SHORT).show();
+           Toast.makeText(context, "注册成功", Toast.LENGTH_SHORT).show();
        }catch (Exception e){
-           Toast.makeText(context, "成功", Toast.LENGTH_SHORT).show();
+           Toast.makeText(context, "注册失败", Toast.LENGTH_SHORT).show();
        }finally {
         if(sqLiteDatabase!=null){
             sqLiteDatabase.close();
@@ -85,5 +102,6 @@ public class Mysql {
         }
 
         return  map;
-    }
+    }*/
+
 }
