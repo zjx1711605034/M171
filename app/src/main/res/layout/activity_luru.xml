@@ -153,11 +153,13 @@
         android:id="@+id/btn_luru_return"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="28dp"
         android:background="@android:color/holo_red_light"
         android:text="返回"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/btn_luru_change"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/btn_luru_change"
         app:layout_constraintTop_toBottomOf="@+id/btn_luru_change" />
+
 </android.support.constraint.ConstraintLayout>
