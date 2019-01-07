@@ -12,6 +12,7 @@ import com.example.yt.libiarymessage.R;
 
 import java.util.List;
 
+
 public class MyBaseAdapter extends BaseAdapter {
     private List<Book> books;
     private Context context;

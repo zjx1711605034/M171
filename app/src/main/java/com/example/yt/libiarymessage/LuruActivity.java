@@ -22,6 +22,7 @@ import java.util.List;
 public class LuruActivity extends AppCompatActivity implements View.OnClickListener {
 
 
+
     private Toolbar MyToobar;
     private TextView tv_luru_title;
     private TextView tv_luru_ID;

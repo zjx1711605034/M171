@@ -11,6 +11,7 @@ import java.util.Map;
 
 public class Mysql {
 
+
    static MyDBHelper myDBHelper=null;
 
     public static SQLiteDatabase WrieData(Context context){

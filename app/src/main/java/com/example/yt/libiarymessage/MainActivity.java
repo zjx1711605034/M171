@@ -12,6 +12,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
 
+
     private TextView tv_main_title;
     private TextView tv_main_zhanghao;
     private EditText edt_main_zhanghao;

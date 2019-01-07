@@ -23,6 +23,7 @@ import java.util.Map;
 
 public class ZhuceActivity extends AppCompatActivity implements View.OnClickListener {
 
+
     private MyDBHelper myDBHelper;
     private TextView tv_zhuce_title;
     private TextView tv_zhuce_zhanghao;

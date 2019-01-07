@@ -5,6 +5,7 @@ public class Zhuche {
     private  String username;
 
 
+
     public Zhuche(String userpasw, String username) {
         this.userpasw = userpasw;
         this.username = username;
